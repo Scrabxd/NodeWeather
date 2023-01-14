@@ -1,0 +1,55 @@
+.addRecruiterConfirm {
+    display: flex;
+    justify-content: center;
+
+    .alertAddConfirm {
+        margin-top: 6rem;
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(242, 255, 242);
+        text-align: center;
+
+        .textModalAdd {
+            font-weight: bold;
+        }
+    }
+}
+
+.modalAddRecruiter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textFieldsContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem;
+        background-color: white;
+        border-radius: 10px;
+
+        .textFieldStyled {
+            margin: 1rem 0;
+
+            .MuiOutlinedInput-root {
+                & fieldset {
+                    border: 2px solid #B1B1B1;
+                }
+            }
+
+            &:hover fieldset {
+                border: 2px solid #800180;
+            }
+
+            .Mui-focused fieldset {
+                border: 2px solid #800180;
+            }
+
+            .MuiInputLabel-root {
+                color: gray;
+            }
+        }
+    }
+}

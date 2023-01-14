@@ -1,0 +1,85 @@
+
+.profile-container {
+    display: grid;
+    grid-template-rows: 56px 1fr 56px;
+    grid-template-areas:
+        '.'
+        'contenido'
+        '.';
+
+    .components-container {
+        grid-area: contenido;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "focuspanel" "supportpanel";
+        max-height: calc(100vh - 112px);
+        overflow-y: scroll;
+        overflow-x: visible;
+        grid-row-gap: 3rem;
+
+        @media screen and (min-width: 1000px) {
+            grid-area: contenido;
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "focuspanel supportpanel";
+            max-height: calc(100vh - 112px);
+        }
+    }
+    .navbar,
+    .appbar {
+        background-color: white;
+        box-shadow: 0 0 15px 0 #C2C2C2;
+        
+    }
+
+}
+.companiesDeskContainer {
+    grid-area: Tables;
+    margin: 10px;    
+
+    @media screen and (max-width: 700px) {
+       // display: none; //Esto será para vista en teléfono
+    }
+
+    .tableRowCompaniesHover {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+
+    .paginationContainerCompanies {
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        border-top: 1px solid lightgray;
+
+        .paginationTextCompanies {
+            color: rgb(94, 94, 94);
+
+            .MuiSelect-select {
+                color: gray;
+            }
+
+            .textPagesCompanies {
+                margin-left: 9px;
+            }
+        }
+
+        .buttonsPaginationContainerCompanies {
+            margin-left: 1rem;
+
+            .buttonPagination {
+                color: #243071;
+                margin: 0px 9px;
+            }
+        }
+    }
+}

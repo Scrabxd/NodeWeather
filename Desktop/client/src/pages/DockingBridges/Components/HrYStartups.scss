@@ -1,0 +1,63 @@
+.deleteRecruiterConfirm {
+    display: flex;
+    justify-content: center;
+
+    .alertDeleteConfirm {
+        margin-top: 6rem;
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(242, 255, 242);
+        text-align: center;
+
+        .textDeletedConfirm {
+            font-weight: bold;
+        }
+    }
+}
+
+.tableRecruitersContainer {
+    grid-area: Tables;
+
+    // @media screen and (max-width: 700px) {
+    //     display: none;
+    // }
+
+    .tableCellStyled {
+        padding: 6px 0px;
+    }
+
+    .paginationContainerRecruiters {
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        border-top: 1px solid lightgray;
+
+        .paginationTextRecruiters {
+            color: rgb(94, 94, 94);
+
+            .MuiSelect-select {
+                color: gray;
+            }
+
+            .textPagesRecruiters {
+                margin-left: 9px;
+            }
+        }
+
+        .buttonsPaginationContainerRecruiters {
+            margin-left: 1rem;
+
+            .buttonPaginationRecruiters {
+                color: #800180;
+                margin: 0px 9px;
+            }
+        }
+    }
+}

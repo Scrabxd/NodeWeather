@@ -1,0 +1,24 @@
+.tableContainerCompaniesMobile {
+    grid-area: Tables;
+
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+
+    .buttonsPaginationCompaniesMobile {
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        .buttonPaginationCompaniesMobile {
+            color: #800180;
+        }
+
+        .textPaginationCompaniesMobile {
+            font-size: 14px;
+            color: #4f004f;
+        }
+    }
+}

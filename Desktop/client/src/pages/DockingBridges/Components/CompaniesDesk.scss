@@ -1,0 +1,47 @@
+.companiesDeskContainer {
+    grid-area: Tables;
+
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    .tableRowCompaniesHover {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+
+    .paginationContainerCompanies {
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        border-top: 1px solid lightgray;
+
+        .paginationTextCompanies {
+            color: rgb(94, 94, 94);
+
+            .MuiSelect-select {
+                color: gray;
+            }
+
+            .textPagesCompanies {
+                margin-left: 9px;
+            }
+        }
+
+        .buttonsPaginationContainerCompanies {
+            margin-left: 1rem;
+
+            .buttonPagination {
+                color: #800180;
+                margin: 0px 9px;
+            }
+        }
+    }
+}

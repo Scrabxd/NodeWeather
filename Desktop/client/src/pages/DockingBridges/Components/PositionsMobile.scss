@@ -1,0 +1,39 @@
+.tableContainerPositions {
+    grid-area: Tables;
+
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+
+    .paginationPositionsMobile {
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        .buttonPaginationPositionsMobile {
+            color: #800180;
+        }
+
+        .paginationPosMobModText {
+            font-size: 14px;
+            color: #4f004f;
+        }
+    }
+}
+
+
+
+.arrowContainerPositions {
+    
+    .arrowTableCell {
+        padding: 0;
+    }
+
+    .arrowIcon {
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+    }
+}

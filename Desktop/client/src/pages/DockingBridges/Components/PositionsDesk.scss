@@ -1,0 +1,49 @@
+.positionsDeskContainer {
+    grid-area: Tables;
+    max-height: 100%;
+
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    .positionRowHover {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+
+    .paginationContainerPositions {
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        border-top: 1px solid lightgray;
+
+        .paginationTextPositions {
+            color: rgb(94, 94, 94);
+
+            .MuiSelect-select {
+                color: gray;
+            }
+
+            .textPagesPositions {
+                margin-left: 9px;
+            }
+        }
+
+        .buttonsPaginationContainer {
+            margin-left: 1rem;
+
+            .buttonPaginationPositions {
+                color: #800180;
+                margin: 0px 9px;
+            }
+        }
+
+    }
+}

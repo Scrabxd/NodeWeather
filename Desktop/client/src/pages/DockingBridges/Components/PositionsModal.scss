@@ -1,0 +1,33 @@
+.positionsModalContainer {
+    grid-area: Tables;
+    width: 100%;
+    
+    .MuiTable-root {
+        width: 100%;
+    }
+
+    .paginationPositionsModal {
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        .buttonPaginationPositionsModal {
+            color: #800180;
+        }
+
+        .paginationPosModText {
+            font-size: 14px;
+            color: #4f004f;
+        }
+    }
+}
+
+
+
+.arrowContainerPositionsModal {
+    .arrowTableCellModal {
+        padding: 0;
+    }
+}

@@ -1,0 +1,135 @@
+.Docking-Container {
+    display: grid;
+    grid-template-rows: 66px 1fr 66px;
+    grid-template-areas:
+        'AppBar'
+        'Focus'
+        'BottomNav';
+
+    .App-Bar {
+        grid-area: AppBar;
+        background-color: white;
+        box-shadow: 0 0 15px 0 #C2C2C2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 9px;
+
+        .numCompaniesContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .numberCompanies {
+                font-size: 1.8rem;
+                font-weight: bold;
+                height: 36px;
+            }
+
+            .numCompaniesText {
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            @media screen and (min-width: 700px) {
+                flex-direction: row;
+                align-items: baseline;
+
+                .numberCompanies {
+                    font-size: 2.4rem;
+                    height: auto;
+                    margin-right: 9px;
+                }
+
+                .numCompaniesText {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .sourcesFiltersContainer {
+            display: flex;
+            align-items: center;
+
+            .sourcesModalsContainerDB {
+                display: flex;
+                flex-direction: column;
+    
+                .sourcesContainerText {
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+    
+                .buttonsSourcesContainer {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .Components-Container {
+        grid-area: Focus;
+        max-height: calc(100vh - 132px);
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9px 1fr 9px;
+        grid-template-areas:
+            '.'
+            'Tables'
+            '.';
+
+        @media screen and (min-width: 700px) {
+            padding: 0 1rem 0 1rem;
+        }
+    }
+
+    .Bottom-Navigation {
+        height: 100%;
+        grid-area: BottomNav;
+        background-color: white;
+        box-shadow: 0 0 15px 0 #C2C2C2;
+
+        .Mui-selected {
+            background-color: #80018030;
+        }
+
+        .MuiBottomNavigationAction-root {
+            background-color: none;
+        }
+
+        .buttonIcon {
+            color: #800180;
+            font-size: 30px;
+        }
+
+        .buttonText {
+            color: #800180;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .buttonBottomNav {
+            color: #800180;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+
+            .buttonIcon {
+                color: #800180;
+                font-size: 30px;
+            }
+
+            .buttonText {
+                color: #800180;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    }
+}

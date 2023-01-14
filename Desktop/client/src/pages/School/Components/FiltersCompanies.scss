@@ -1,0 +1,127 @@
+.FiltersPositionsContainer {
+    width: 342px;
+    padding: 15px;
+
+    .titleContainer {
+        .findPositionText {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #5c5c5c;
+        }
+
+        .titleFilters {
+            font-weight: bold;
+            color: #5c5c5c;
+        }
+
+        .iconClose {
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            padding: 3px 3px;
+        }
+    }
+
+    .firstTextFieldsContainer {
+        line-height: 11px;
+        margin: 2rem 0;
+        padding: 0 1rem;
+
+        .inputFilters {
+            .MuiOutlinedInput-root {
+                & fieldset {
+                    border: 2px solid #B1B1B1;
+                }
+            }
+
+            &:hover fieldset {
+                border: 2px solid #243071;
+            }
+
+            .Mui-focused fieldset {
+                border: 2px solid #243071;
+            }
+
+            .MuiInputLabel-root {
+                color: black;
+                font-weight: bolder;
+            }
+        }
+
+        .keywordsPhrase {
+            font-size: 10px;
+            font-weight: bold;
+            color: #B1B1B1;
+        }
+    }
+
+    .radiosContainer {
+        padding: 1.5rem 1rem 1rem 1rem;
+
+        .searchForKeyword {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .selectRadioContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .JobName {
+                font-size: 19px;
+                font-weight: bold;
+                color: #B1B1B1;
+            }
+
+            .descriptionText {
+                font-size: 19px;
+                font-weight: bold;
+                color: #B1B1B1;
+            }
+
+            .radioBorder {
+                width: 2.4rem;
+                height: 1.3rem;
+                border: 3px solid black;
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                padding: 0 2px;
+                margin: 0 1rem;
+                // justify-content: flex-end;
+
+                .radioDot {
+                    width: 9px;
+                    height: 9px;
+                    background-color: black;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    .selectsContainer {
+        padding: 1.5rem 1rem 0 1rem;
+
+        .selectTextLabel {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .MuiInputBase-root {
+            & fieldset {
+                border: 2px solid #B1B1B1;
+            }
+
+            &:hover fieldset {
+                border: 2px solid #243071;
+            }
+        }
+
+        .Mui-focused fieldset {
+            border: 2px solid #243071;
+        }
+    }
+
+}

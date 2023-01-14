@@ -1,0 +1,24 @@
+.components-container {
+    width: 100%;
+    height: calc( 100vh - 112px );
+    display: flex;
+    justify-content: space-evenly;  
+    .FilterDesk{
+        @media screen and (max-width: 750px) {
+            display: none; //Esto será para vista en teléfono
+        }
+    }  
+}
+
+.navbar,
+.appbar {
+    height: 56px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 #C2C2C2;
+    .FilterMobile{
+        @media screen and (min-width: 750px) {
+            display: none; //Esto será para vista en teléfono
+        }
+    }
+    
+}

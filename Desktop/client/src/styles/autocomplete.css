@@ -1,0 +1,66 @@
+div.select-menu {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    max-width: 13rem;
+    height: auto;
+    max-height: 12rem;
+    overflow: auto ;
+    border: none;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 4px 8px 1px lightgray;
+}
+
+div.select-menu::-webkit-scrollbar{
+    background: white;
+    width: 5px;
+}
+
+div.select-menu::-webkit-scrollbar-track {
+    border: 1px solid lightgrey;
+}
+
+div.select-menu::-webkit-scrollbar-thumb{
+    background: lightgrey;
+}
+
+div.select-menu:not(:hover){
+    display: none;
+}
+
+#inputAutocomplete:focus + div.select-menu {
+    display: block;
+}
+
+#inputAutocomplete:focus{
+    box-shadow: none;
+}
+
+div.select-menu:active div:active {
+    cursor: context-menu;
+    background-color: rgb(100, 97, 97);
+}
+
+
+div.select-menu div:hover{
+    background-color: lightgrey;
+}
+
+div.select-menu, div.select-menu div::selection{
+    cursor: context-menu;
+    background-color: white;
+}
+
+div.select-menu div{
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 80rem;
+    font-size: 9pt;
+    background-color: white;
+    text-align: start;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
